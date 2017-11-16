@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:singleLine="false"
+         />
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attempt"
+        android:singleLine="false"
+        android:layout_below="@+id/result"
+         />
+    
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrong"
+        android:singleLine="false"
+         android:layout_below="@+id/attempt"
+         />
+    
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:id="@+id/review"
+         android:layout_below="@+id/wrong"
+        />
+        
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/home"
+         android:layout_below="@+id/wrong"
+         android:layout_toEndOf="@+id/review"
+        />
+        
+    
+</RelativeLayout>
